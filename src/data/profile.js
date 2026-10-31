@@ -12,9 +12,9 @@ export const profile = {
   intro:
     "I am an Information Technology student passionate about software development, multimedia production, research, and student leadership. Through technology and creativity, I develop meaningful projects, share knowledge, and contribute to my academic community.",
   program: "Bachelor of Science in Information Technology (BSIT)",
-  section: "BSIT-3 Pascal",                     // from your CITO President poster
+  section: "BSIT-4 Pascal",                     // from your CITO President poster
   institution: "Infotech Development Systems College, Inc., Ligao City, Albay, Philippines",
-  email: "you@example.com",                     // PLACEHOLDER
+  email: "hazelannbaguio7@gmail.com",                     // PLACEHOLDER
   socials: {
     github: "https://github.com/jun1orWebCraft",
     linkedin: "https://www.linkedin.com/in/hazel-ann-baguio-8a937934a/",
