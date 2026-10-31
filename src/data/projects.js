@@ -1,0 +1,18 @@
+// Software projects. GitHub repos are NOT filled in yet: add real repo names/URLs. Never invent details.
+export const projects = [
+  { id: "batanghanda", featured: true, category: "mobile",
+    title: "BatangHanda",
+    description: "A mobile-based learning platform for disaster resilience and climate change awareness among children ages 7-12 in Ligao City.",
+    technologies: ["Flutter", "Dart", "Supabase", "SQLite", "Flame 2D Game Engine"],
+    role: "One of the co-developers of the BatangHanda app.",
+    video: "/videos/projects/batanghanda-preview.mp4",
+    thumbnail: "/images/projects/batanghanda-poster.jpg", screenshots: [], repoUrl: "", demoUrl: "" },
+  { id: "medicare", featured: false, category: "web",
+    title: "MediCare Medical Records System",
+    description: "Web system for managing medical records and appointments, with patient login and registration. Preview video included.",
+    technologies: ["Python", "HTML", "CSS"],
+    role: "Built the system security with Python, and the rest of the system with HTML and CSS.", 
+    video: "/videos/projects/medicare-project.mp4",
+    thumbnail: "/images/projects/medicare-project-poster.jpg", screenshots: [], repoUrl: "", demoUrl: "" },
+  // EDIT: add your third project (the school activity requires at least three).
+];

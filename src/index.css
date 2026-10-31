@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* ---------- Design tokens: Purple Creative Tech ---------- */
+:root, :root[data-theme="dark"] {
+  --bg: #10081f;
+  --bg-2: #1c1033;
+  --primary: #7c3aed;
+  --accent: #a855f7;
+  --lavender: #c4b5fd;
+  --highlight: #e9d5ff;
+  --text: #f8f5ff;
+  --text-2: #b9a9d0;
+  --glass: rgba(28, 16, 51, 0.6);
+  --line: rgba(196, 181, 253, 0.16);
+  --glow: rgba(124, 58, 237, 0.35);
+}
+:root[data-theme="light"] {
+  --bg: #f6f1ff;
+  --bg-2: #ebe1ff;
+  --primary: #6d28d9;
+  --accent: #7c3aed;
+  --lavender: #5b21b6;
+  --highlight: #4c1d95;
+  --text: #1e1038;
+  --text-2: #5b4b78;
+  --glass: rgba(255, 255, 255, 0.65);
+  --line: rgba(109, 40, 217, 0.18);
+  --glow: rgba(124, 58, 237, 0.22);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg2: var(--bg-2);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-lavender: var(--lavender);
+  --color-highlight: var(--highlight);
+  --color-ink: var(--text);
+  --color-ink2: var(--text-2);
+  --color-line: var(--line);
+  --font-display: "Space Grotesk", "Sora", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  transition: background-color .3s ease, color .3s ease;
+}
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
+.text-gradient {
+  background: linear-gradient(100deg, var(--highlight), var(--accent) 55%, var(--primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  min-height: 2.75rem; padding: .7rem 1.4rem; border-radius: 999px;
+  font-weight: 600; transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn-primary { background: var(--primary); color: #fff; box-shadow: 0 8px 28px var(--glow); }
+.btn-primary:hover { background: var(--accent); }
+.btn-ghost { border: 1px solid var(--line); color: var(--text); background: var(--glass); }
+.btn-ghost:hover { border-color: var(--accent); }
+
+@keyframes caret { 50% { opacity: 0; } }
+.caret { animation: caret 1s steps(1) infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .caret { animation: none; }
+  * { transition-duration: .01ms !important; }
+}
