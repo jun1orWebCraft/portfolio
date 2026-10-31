@@ -14,5 +14,11 @@ export const projects = [
     role: "Built the system security with Python, and the rest of the system with HTML and CSS.", 
     video: "/videos/projects/medicare-project.mp4",
     thumbnail: "/images/projects/medicare-project-poster.jpg", screenshots: [], repoUrl: "", demoUrl: "" },
-  // EDIT: add your third project (the school activity requires at least three).
+    { id: "idsmarter", featured: false, category: "web",
+    title: "IDSmarter",
+    description: "A school management system developed for Infotech Development Systems Colleges, Inc. (IDSC).",
+    technologies: [".NET", "Docker", "Figma"],
+    role: "Head developer and UI designer (Figma).",
+    thumbnail: "/images/projects/idsmarter-1.png",
+    repoUrl: "", demoUrl: "" },
 ];
